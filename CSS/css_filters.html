@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container {
+            width: 466px;
+            height: 488px;
+            border: 2px solid black;
+            background-size: cover;
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            object-fit: cover;
+            filter: blur(10px);
+            filter: grayscale(30);
+            filter: drop-shadow(16px 16px 20px red);
+            filter: opacity(0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" alt="">
+    </div>
+</body>
+</html>
